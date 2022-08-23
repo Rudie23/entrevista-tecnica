@@ -1,3 +1,6 @@
+from random import shuffle
+
+
 def max_min(lst):
     """
     Calculate the maximum and minimum of a list
@@ -18,4 +21,10 @@ def max_min(lst):
     return max_value, min_value
 
 
-print(max_min(list(range(50))))
+print(max_min([1]))
+print(max_min([1, 2]))
+random_list = list(range(100))
+shuffle(random_list)
+print(random_list)
+print(max_min(random_list))
+print(max_min([]))
