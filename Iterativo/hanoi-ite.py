@@ -22,7 +22,7 @@ def hanoi(n, orig='A', aux='B', dest='C'):
             stack.append((True, n, orig, aux, dest))
             stack.append((False, n - 1, orig, dest, aux))
         else:
-            print('{} -> {} : {}'.format(orig, dest, n))
+            print(f'{orig} -> {dest} : {n}')
             stack.append((False, n - 1, aux, orig, dest))
 
 
