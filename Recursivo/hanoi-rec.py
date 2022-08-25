@@ -18,7 +18,6 @@ def hanoi(n, orig='A', aux='B', dest='C'):
         hanoi(n - 1, aux, orig, dest)  # Segunda Chamada
 
 
-hanoi(2)
-for i in range(1, 4):
+for i in range(3, 4):
     print(f'### Hanoi {i}')
     hanoi(i)
